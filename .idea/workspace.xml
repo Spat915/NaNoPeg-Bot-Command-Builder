@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da48a98a-77a3-4141-b5cb-f9b183365f4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Bot Command Builder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bot Command Builder.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <workItem from="1585496305126" duration="10182000" />
       <workItem from="1585514510656" duration="26094000" />
       <workItem from="1585575930476" duration="563000" />
-      <workItem from="1585581159798" duration="3347000" />
+      <workItem from="1585581159798" duration="4153000" />
     </task>
     <servers />
   </component>
