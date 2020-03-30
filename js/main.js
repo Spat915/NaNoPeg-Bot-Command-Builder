@@ -63,6 +63,14 @@ function init() {
 
     // generate command button
     $('.generateBtn button').click(generateCommand);
+
+    $('.copyBtn').click(function () {
+        const elem = $('.command');
+        elem.prop('disabled', false);
+        elem.select();
+        document.execCommand('copy');
+        elem.prop('disabled', 'disabled');
+    });
 }
 
 function hideAll() {
@@ -180,8 +188,7 @@ function seshatAddParameter(e) {
                 return;
             }
             details.catType = catType;
-            let catName = SESHAT_IDEA_CAT_TYPE_FORMATED[catType];
-            catName = catName[0].toUpperCase() + catName.slice(1);
+            const catName = SESHAT_IDEA_CAT_TYPE_FORMATED[catType];
             if (catType < 6) {
                 txt = `Category: ${catName}`;
             } else {
@@ -258,10 +265,10 @@ function createElement(params) {
 function generateCommand() {
     let generatedCommand = `${BOT_COMMAND_CHARS[bot]}`;
     switch (bot) {
-        case 1:
+        case 1: // Chronos
             generatedCommand = `${generatedCommand}${CHRONOS_COMMANDS[command]}`;
             switch (command) {
-                case 1:
+                case 1: // war
                     const start = parseInt($('#chronosWarStartAt').val()),
                         duration = parseInt($('#chronosWarDuration').val());
 
@@ -287,24 +294,43 @@ function generateCommand() {
                         generatedCommand = `${generatedCommand} ${duration}`;
                     }
                     break;
-                case 2:
+                case 2: // view_wars
                     break;
                 default:
                     break;
             }
             break;
-        case 2:
+        case 2: // Seshat
             generatedCommand = `${generatedCommand}${SESHAT_COMMANDS[command]}`;
             switch (command) {
-                case 1:
+                case 1: // privacy
                     break;
-                case 2:
+                case 2: // idea
+                    console.log(details);
+                    if (details.catType) {
+                        if (details.catType < 6) {
+                            generatedCommand = `${generatedCommand} --category ${SESHAT_IDEA_CAT_TYPE[details.catType]}`;
+                        } else {
+                            generatedCommand = `${generatedCommand} --type ${SESHAT_IDEA_CAT_TYPE[details.catType]}`;
+                        }
+                    }
+                    if (details.rating) {
+                        generatedCommand = `${generatedCommand} --rating ${SESHAT_IDEA_RATINGS[details.rating]}`;
+                    }
+                    if (details.ratingMin) {
+                        generatedCommand = `${generatedCommand} --min ${SESHAT_IDEA_RATINGS[details.ratingMin]}`;
+                    }
+                    if (details.ratingMax) {
+                        generatedCommand = `${generatedCommand} --max ${SESHAT_IDEA_RATINGS[details.ratingMax]}`;
+                    }
                     break;
                 default:
                     break;
             }
     }
     console.log(`"${generatedCommand}"`);
+    toggleCommandGeneration(true);
+    $('.command, .commandTmp').text(generatedCommand);
 }
 
 function toggleShowHide(div, show) {

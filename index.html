@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col col-md-10 offset-md-1 p-0">
+      <div class="col col-md-10 offset-md-1 p-md-0">
         <form>
           <!-- Select a Bot -->
           <div class="form-group">
@@ -93,7 +93,7 @@
           <!-- Seshat Idea Details -->
           <div class="ideaParameters">
             <div class="row">
-              <div class="col-8">
+              <div class="col-12 col-md-8">
                 <select class="form-control ideaFilterType mb-3">
                   <option disabled="disabled" selected="selected" hidden="hidden">Select Filter...</option>
                   <option value="1">Category or Type</option>
@@ -144,14 +144,14 @@
                   <option value="5">MA: Explicit Themes</option>
                 </select>
               </div>
-              <div class="ideaBtn col-4 mb-3">
+              <div class="ideaBtn col col-md-4 mb-3">
                 <button class="btn btn-primary btn-block seshatParameterBtn h-100">Add Parameter</button>
               </div>
             </div>
             <div class="row">
-              <div class="col-8 ideaParameterList"></div>
-              <div class="col-4 mb-3">
-                <button class="btn btn-danger btn-block seshatParameterResetBtn">Reset Parameters</button>
+              <div class="col-12 col-md-8 ideaParameterList"></div>
+              <div class="col col-md-4 mb-3">
+                <button class="btn btn-danger btn-block seshatParameterResetBtn h-100">Reset Parameters</button>
               </div>
             </div>
             <!-- Components added via JS -->
@@ -162,17 +162,17 @@
         </form>
       </div>
     </div>
-    <div class="row generateBtn">
-      <div class="col col-md-10 offset-md-1 p-0">
+    <div class="row generateBtn mb-3">
+      <div class="col col-md-10 offset-md-1 p-md-0">
         <button class="btn btn-secondary btn-block">Generate Command</button>
       </div>
     </div>
     <div class="row commandGeneration">
-      <div class="col-12 col-md-2 offset-md-1 p-0">
-        <button class="btn btn-primary btn-block h-100">Copy</button>
+      <div class="col-12 col-md-2 offset-md-1 pl-md-0 mb-3">
+        <button class="btn btn-primary btn-block h-100 copyBtn">Copy</button>
       </div>
-      <div class="col-12 col-md-8 p-0">
-        <textarea class="form-control" disabled="disabled"></textarea>
+      <div class="col-12 col-md-8 p-md-0 mb-3">
+        <textarea class="form-control command" disabled="disabled"></textarea>
       </div>
     </div>
   </div>
