@@ -43,31 +43,34 @@
           <div class="form-group">
 <!--            Buttons for selecting the bot-->
             <label for="botSelect">Select a Bot</label>
-            <select id="botSelect" class="form-control">
+            <select id="botSelect" class="form-control" aria-describedby="botSelectHelpBlock">
               <option disabled="disabled" selected="selected" hidden="hidden">Pick One...</option>
               <option value="1">General Chronos (Word War Bot)</option>
               <option value="2">Seshat, the Scribe (Idea Bot)</option>
             </select>
+            <small id="botSelectHelpBlock" class="form-text text-muted">Choose a Bot to create a command for.</small>
           </div>
           <!-- Select a Command -->
           <div class="commandGroup">
             <!-- Chronos Commands -->
             <div class="form-group" id="chronosCommands">
               <label for="chronosSelect">Select a Command</label>
-              <select id="chronosSelect" class="form-control">
+              <select id="chronosSelect" class="form-control" aria-describedby="chronosSelectHelpBlock">
                 <option disabled="disabled" selected="selected" value="0">Pick One...</option>
                 <option value="1">War (Schedule a Word War)</option>
                 <option value="2">View Wars (Running & Scheduled)</option>
               </select>
+              <small id="chronosSelectHelpBlock" class="form-text text-muted">Select a command to continue.</small>
             </div>
             <!-- Seshat Commands -->
             <div class="form-group" id="seshatCommands">
               <label for="seshatSelect">Select a Command</label>
-              <select id="seshatSelect" class="form-control">
+              <select id="seshatSelect" class="form-control" aria-describedby="seshatSelectHelpBlock">
                 <option disabled="disabled" selected="selected" hidden="hidden">Pick One...</option>
                 <option value="1">Privacy (View the bot's Privacy Policy)</option>
                 <option value="2">Idea (Request an Idea)</option>
               </select>
+              <small id="seshatSelectHelpBlock" class="form-text text-muted">Select a command to continue.</small>
             </div>
           </div>
           <!-- Chronos War Details -->
@@ -95,7 +98,7 @@
             <div class="row">
               <div class="col-12 col-md-8">
                 <select class="form-control ideaFilterType mb-3">
-                  <option disabled="disabled" selected="selected" hidden="hidden">Select Filter...</option>
+                  <option disabled="disabled" selected="selected" hidden="hidden">Select a Filter...</option>
                   <option value="1">Category or Type</option>
                   <option value="2">Rating (Range)</option>
                   <option value="3">Rating (Specific)</option>
@@ -156,8 +159,12 @@
             </div>
             <!-- Components added via JS -->
           </div>
-          <div class="mb-3 ratingHelpBlock">
-            <small>By default the rating will be set to T or lower.</small>
+          <div class="form-text filterHelpBlock text-muted mb-3">
+            <small>ALL FILTER PARAMETERS ARE OPTIONAL</small>
+            <br>
+            <small>By default (no rating parameter added) the rating will be set to T or lower. If using a range, the bot will automatically fix a mixup between min and max ratings. Ratings may not have an affect on certain categories or types, or may return nothing if no idea matches the parameters you use.</small>
+            <br>
+            <small>A maximum of 1 Category or Type, and 1 Rating is strongly suggested. Using more options may give unintended results.</small>
           </div>
         </form>
       </div>

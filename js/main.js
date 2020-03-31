@@ -85,7 +85,7 @@ function hideAll() {
     toggleSeshatIdeaCatTypeSelect(false);
     toggleSeshatIdeaRatingSelect(false);
     toggleSeshatIdeaRatingAltSelect(false);
-    toggleSeshatRatingHelp(false);
+    toggleFilterHelpBlock(false);
 
     // Common
     toggleGenerateBtn(false);
@@ -109,7 +109,6 @@ function selectBot(e) {
 
         default:
             hideAll();
-            setDefaults();
             break;
     }
 }
@@ -142,11 +141,13 @@ function seshatCommandSelect(e) {
             toggleGenerateBtn(true);
             toggleSeshatIdeaBtn(false);
             toggleSeshatIdeaParams(false);
+            toggleFilterHelpBlock(false);
             break;
         case 2: // idea
             toggleGenerateBtn(true);
             toggleSeshatIdeaParams(true);
             resetSeshatIdeaParams(true);
+            toggleFilterHelpBlock(true);
             toggleSeshatIdeaCatTypeSelect(false);
             toggleSeshatIdeaRatingSelect(false);
             toggleSeshatIdeaRatingAltSelect(false);
@@ -369,8 +370,8 @@ function toggleSeshatIdeaRatingAltSelect(show) {
     toggleShowHide($('.ratingSelectAlt'), show);
 }
 
-function toggleSeshatRatingHelp(show) {
-    toggleShowHide($('.ratingHelpBlock'), show);
+function toggleFilterHelpBlock(show) {
+    toggleShowHide($('.filterHelpBlock'), show);
 }
 
 function toggleGenerateBtn(show) {
