@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "NaNoPeg Bot Command Builder",
+  "short_name": "NaNoPeg BCB",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
