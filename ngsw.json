@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1602628449419,
+  "timestamp": 1602628867397,
   "index": "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/index.html",
   "assetGroups": [
     {
@@ -122,8 +122,8 @@
         "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/common-es2015.cc7cac7f05cb53e5e5ce.js",
         "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/common-es5.cc7cac7f05cb53e5e5ce.js",
         "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/index.html",
-        "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es2015.f0fec78452329e02e2f8.js",
-        "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es5.f0fec78452329e02e2f8.js",
+        "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es2015.12567dd12eea20ae6ae2.js",
+        "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es5.12567dd12eea20ae6ae2.js",
         "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/manifest.webmanifest",
         "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/polyfills-core-js-es2015.22f1882a210e2656646e.js",
         "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/polyfills-core-js-es5.22f1882a210e2656646e.js",
@@ -289,9 +289,9 @@
     "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/assets/svg/quill.svg": "680d5aa589e3bd0b375d540b83259569c9b7897a",
     "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/common-es2015.cc7cac7f05cb53e5e5ce.js": "0fc8ed8f0a4ac1a99baf96fb6e259bfd3e44f923",
     "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/common-es5.cc7cac7f05cb53e5e5ce.js": "83e92518302ffebb1723835b04729ae8943cf9b5",
-    "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/index.html": "189fe08cabf4b9980ec09d5a48d453494a4276a2",
-    "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es2015.f0fec78452329e02e2f8.js": "0662e3336b0e49e6362bf4f957ac08c83fb26981",
-    "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es5.f0fec78452329e02e2f8.js": "2c41f069351bc4f04229bc648f53542dfac3070c",
+    "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/index.html": "ca23c176bab5b0d228a993a11ae516326d395eb3",
+    "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es2015.12567dd12eea20ae6ae2.js": "402bfd147e4faae06b145980d42618e961ed7b7f",
+    "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/main-es5.12567dd12eea20ae6ae2.js": "78c01d9a9a18d470e12e8b441d9b79285bc2e3ff",
     "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/manifest.webmanifest": "4b15403464b1bf73adb5da49c8ca583fea71892c",
     "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/polyfills-core-js-es2015.22f1882a210e2656646e.js": "f007c630c357ee7eeec2289a6cfc013dbcbe6fe9",
     "https://spat915.github.io/NaNoPeg-Bot-Command-Builder/polyfills-core-js-es5.22f1882a210e2656646e.js": "8531ee642b05d9e12e859babeaec61c2b1c1e57a",
